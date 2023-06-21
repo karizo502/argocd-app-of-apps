@@ -27,10 +27,3 @@ spec:
           limits:
             memory: "10Mi"
             cpu: "100m"
-    syncPolicy:
-      automated: 
-        prune: true 
-        selfHeal: true 
-      syncOptions:    
-      - Validate=false 
-      - CreateNamespace=true

@@ -15,3 +15,10 @@ spec:
     path: my-apps/app-1
     repoURL: https://github.com/karizo502/argocd-app-of-apps.git
     targetRevision: HEAD
+  syncPolicy:
+    automated: 
+      prune: true 
+      selfHeal: true 
+  syncOptions:    
+  - Validate=false 
+  - CreateNamespace=true 
